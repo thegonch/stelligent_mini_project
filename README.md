@@ -26,7 +26,7 @@ This will contain the Output of the hostname that can be navigated to in a brows
 aws cloudformation describe-stacks --stack-name <stack_name> | grep OutputValue
 ```
 
-To execute the infrastructure tests (once Cloudformation is complete), use the hostname for:
+To execute the infrastructure tests (once Cloudformation is complete), navigate to the `tests` directory and use the hostname for the below:
 ```
 HOST=<host_name> rake spec
 ```
