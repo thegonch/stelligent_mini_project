@@ -1,12 +1,12 @@
 # stelligent_mini_project
 An automated build of an Apache HTTPD web server on Amazon Linux with a static HTML page, created with AWS resources, and utilizing infrastructure tests with Serverspec.
 
-PRE-REQUISITES:
+PREREQUISITES:
 - AWS IAM user with full permissions to CloudFormation and EC2, whose credentials are configured for the AWS CLI
 - AWS KeyPair, named MyKeyPair (for the purposes of infrastructure tests), with the private key stored locally under ~/.ssh/MyKeyPair
 - Serverspec local install
 
-To execute the creation of the webserver resources, use the full local location of the template file.
+To execute the creation of the webserver resources, use the full local location of the template file:
 ```
 aws cloudformation create-stack --stack-name <stack_name> --template-body file:////Users//<username>//stelligent_mini_project//webserver_template.json
 ```
