@@ -33,7 +33,6 @@
                 "group"   : "apache"
               },
 
-
               "/etc/cfn/cfn-hup.conf" : {
                 "content" : { "Fn::Join" : ["", [
                   "[main]\n",
