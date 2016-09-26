@@ -71,7 +71,6 @@
       "Properties": {
         "ImageId" : "ami-08842d60",
         "InstanceType"   : "t2.micro",
-        "AvailabilityZone" : "us-east-1a",
         "KeyName" : "MyKeyPair",
         "SecurityGroups" : [ {"Ref" : "WebServerSecurityGroup"} ],
         "UserData"       : { "Fn::Base64" : { "Fn::Join" : ["", [
